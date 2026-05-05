@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium homemade ghee, biscuits, and cakes crafted with traditional kitchen care."
+    />
+    <title>Dakshini Homemade Delights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="#hero" class="brand" aria-label="Dakshini home">
+          <img src="logo.svg" alt="Dakshini logo" class="brand__logo" />
+        </a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="hero">
+        <div class="hero__texture" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <div class="hero__content fade-up">
+            <p class="eyebrow">Traditional Kitchen. Modern Presentation.</p>
+            <h1>Homemade goodness in every spoon, bite, and slice.</h1>
+            <p class="hero__lead">
+              Discover handcrafted ghee, fresh biscuits, and celebration cakes made with
+              time-honored care and premium ingredients.
+            </p>
+            <div class="hero__actions">
+              <a href="#products" class="btn btn--primary">Explore Products</a>
+              <a href="#contact" class="btn btn--ghost">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products" id="products">
+        <div class="container">
+          <div class="section__heading fade-up">
+            <p class="eyebrow">Our Signature Range</p>
+            <h2>Made fresh in small batches</h2>
+          </div>
+          <div class="products__grid">
+            <article class="product-card fade-up">
+              <img
+                src="https://images.unsplash.com/photo-1633436375153-d7045cb93e38?auto=format&fit=crop&w=900&q=80"
+                alt="Golden homemade ghee in a glass jar"
+                loading="lazy"
+              />
+              <div class="product-card__content">
+                <h3>Pure Ghee</h3>
+                <p>
+                  Slow-cooked from quality butter for rich aroma, granular texture, and
+                  authentic flavor in every meal.
+                </p>
+              </div>
+            </article>
+            <article class="product-card fade-up">
+              <img
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=80"
+                alt="Handmade biscuits arranged on a tray"
+                loading="lazy"
+              />
+              <div class="product-card__content">
+                <h3>Classic Biscuits</h3>
+                <p>
+                  Crisp, buttery, and lightly sweet biscuits baked in traditional style for
+                  tea-time comfort and everyday delight.
+                </p>
+              </div>
+            </article>
+            <article class="product-card fade-up">
+              <img
+                src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=900&q=80"
+                alt="Freshly decorated homemade celebration cake"
+                loading="lazy"
+              />
+              <div class="product-card__content">
+                <h3>Fresh Cakes</h3>
+                <p>
+                  Soft, moist, and lovingly finished cakes crafted for birthdays, gatherings,
+                  and sweet moments worth sharing.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about__inner fade-up">
+          <div class="about__text">
+            <p class="eyebrow">Our Story</p>
+            <h2>From our kitchen to your family table</h2>
+            <p>
+              We began with a simple belief: food made at home carries warmth that no factory can
+              replicate. Every batch is prepared with patience, trusted recipes, and the same care
+              we give our own loved ones.
+            </p>
+          </div>
+          <div class="about__media">
+            <img src="hero.webp" alt="Traditional homemade preparation in Dakshini kitchen" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact__panel fade-up">
+          <div class="contact__info">
+            <p class="eyebrow">Get in Touch</p>
+            <h2>Tell us what you need, we will get back quickly.</h2>
+            <p>
+              Share your requirement for ghee, biscuits, or cakes. We prepare in small batches and
+              help you with availability and custom requests.
+            </p>
+            <div class="contact__quick-actions">
+              <a href="tel:+919999999999" class="btn btn--primary">Call: +91 99999 99999</a>
+              <a
+                href="https://wa.me/919999999999"
+                class="btn btn--whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+          <form class="contact__form" id="contact-form" novalidate>
+            <label class="contact__field">
+              <span>Your Name</span>
+              <input type="text" name="name" placeholder="Enter your full name" required />
+            </label>
+            <label class="contact__field">
+              <span>Phone Number</span>
+              <input type="tel" name="phone" placeholder="+91 xxxxx xxxxx" required />
+            </label>
+            <label class="contact__field">
+              <span>Message</span>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="I want details for ghee / biscuits / cakes..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary contact__submit">Submit</button>
+            <p class="contact__note" id="contact-note" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Dakshini Homemade Delights. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/919999999999"
+      class="whatsapp-widget"
+      id="whatsapp-widget"
+      data-wa-link=""
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M19.05 4.94A9.9 9.9 0 0 0 12.02 2c-5.49 0-9.96 4.47-9.96 9.96 0 1.76.46 3.48 1.33 4.99L2 22l5.18-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.49 0 9.96-4.47 9.96-9.96 0-2.66-1.04-5.16-2.94-7.01Zm-7.03 15.26h-.01a8.3 8.3 0 0 1-4.22-1.15l-.3-.18-3.07.8.82-2.99-.2-.31a8.28 8.28 0 0 1-1.27-4.4c0-4.59 3.74-8.33 8.34-8.33 2.22 0 4.31.86 5.87 2.43a8.24 8.24 0 0 1 2.45 5.88c0 4.59-3.74 8.33-8.41 8.33Zm4.57-6.25c-.25-.12-1.49-.73-1.72-.82-.23-.09-.39-.12-.56.12-.16.25-.64.82-.79.99-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.23-.73-.65-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.14.17-.25.25-.41.08-.16.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.41-.56-.41h-.48c-.16 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.42 1.02 2.59.12.16 1.76 2.69 4.26 3.77.59.25 1.05.4 1.41.51.59.19 1.12.16 1.54.1.47-.07 1.49-.61 1.7-1.2.21-.59.21-1.09.14-1.2-.06-.1-.23-.16-.48-.29Z"
+        />
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
