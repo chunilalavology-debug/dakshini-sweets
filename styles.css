@@ -409,6 +409,11 @@ p {
   color: var(--color-muted);
 }
 
+.about .eyebrow,
+.contact .eyebrow {
+  color: var(--color-secondary);
+}
+
 .contact__panel {
   background: linear-gradient(
       130deg,
