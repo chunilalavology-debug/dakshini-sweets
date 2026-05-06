@@ -662,6 +662,10 @@ p {
     flex: 0 0 auto;
     width: 100%;
   }
+
+  .hero__content {
+    margin-left: clamp(2rem, 6vw, 5.5rem);
+  }
 }
 
 @media (max-width: 960px) {
