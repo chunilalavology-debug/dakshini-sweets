@@ -47,6 +47,15 @@ a {
   margin-inline: auto;
 }
 
+/* Make key showcase sections wider on desktop */
+@media (min-width: 961px) {
+  .products > .container,
+  .about > .container,
+  .contact > .container {
+    width: min(100% - 2rem, 1240px);
+  }
+}
+
 .section {
   padding: clamp(4rem, 8vw, 7rem) 0;
 }
@@ -112,7 +121,7 @@ p {
 
 .nav {
   position: relative;
-  min-height: 78px;
+  min-height: 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -126,8 +135,8 @@ p {
 }
 
 .brand__logo-wrap {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -135,8 +144,8 @@ p {
 }
 
 .brand__logo {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   max-width: none;
   object-fit: contain;
 }
@@ -664,7 +673,7 @@ p {
   }
 
   .hero__content {
-    margin-left: clamp(2rem, 6vw, 5.5rem);
+    margin-left: clamp(3rem, 8vw, 7rem);
   }
 }
 
@@ -690,7 +699,7 @@ p {
 
   .nav__links {
     position: absolute;
-    top: 78px;
+    top: 96px;
     right: 1rem;
     width: min(240px, calc(100% - 2rem));
     flex-direction: column;
