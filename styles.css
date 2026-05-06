@@ -400,9 +400,9 @@ p {
 
 .about__media img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 16px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
   box-shadow: 0 12px 28px rgba(43, 23, 26, 0.14);
   transition: transform 320ms ease, box-shadow 320ms ease;
 }
