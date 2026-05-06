@@ -235,7 +235,7 @@ p {
     linear-gradient(115deg, rgba(33, 19, 21, 0.68), rgba(106, 31, 43, 0.45)),
     radial-gradient(circle at 15% 20%, rgba(210, 113, 103, 0.2), transparent 45%),
     radial-gradient(circle at 80% 15%, rgba(79, 142, 145, 0.15), transparent 35%),
-    url("images/hero.webp") center / cover no-repeat;
+    url("images/hero2.jpeg") center / cover no-repeat;
   pointer-events: none;
   animation: heroFloat 12s ease-in-out infinite alternate;
 }
