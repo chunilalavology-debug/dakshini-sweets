@@ -648,6 +648,23 @@ p {
   }
 }
 
+@media (min-width: 961px) {
+  .hero.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: clamp(2rem, 5vh, 4rem);
+    padding-bottom: clamp(2rem, 5vh, 4rem);
+  }
+
+  .hero__inner {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
 @media (max-width: 960px) {
   .about__inner,
   .contact__panel {
