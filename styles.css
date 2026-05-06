@@ -114,6 +114,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 80;
+  padding-top: env(safe-area-inset-top, 0px);
   backdrop-filter: blur(8px);
   background: rgba(248, 241, 234, 0.88);
   border-bottom: 1px solid rgba(106, 31, 43, 0.1);
@@ -706,6 +707,17 @@ p {
 }
 
 @media (max-width: 760px) {
+  body {
+    padding-top: calc(132px + env(safe-area-inset-top, 0px));
+  }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   .brand__logo-wrap,
   .brand__logo {
     width: 112px;
@@ -713,7 +725,9 @@ p {
   }
 
   .nav {
-    min-height: 124px;
+    min-height: 132px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
 
   .nav__toggle {
@@ -722,7 +736,7 @@ p {
 
   .nav__links {
     position: absolute;
-    top: 124px;
+    top: calc(132px + env(safe-area-inset-top, 0px));
     right: 1rem;
     width: min(240px, calc(100% - 2rem));
     flex-direction: column;
