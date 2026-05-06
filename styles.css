@@ -111,7 +111,8 @@ p {
 }
 
 .nav {
-  min-height: 78px;
+  position: relative;
+  min-height: 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -124,9 +125,21 @@ p {
   gap: 0.7rem;
 }
 
+.brand__logo-wrap {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
 .brand__logo {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
+  max-width: none;
+  transform: scale(1.58);
+  transform-origin: center center;
 }
 
 .nav__links {
@@ -651,13 +664,24 @@ p {
 }
 
 @media (max-width: 760px) {
+  .brand__logo-wrap {
+    width: 118px;
+    height: 118px;
+  }
+
+  .brand__logo {
+    width: 152px;
+    height: 152px;
+    transform: scale(1.52);
+  }
+
   .nav__toggle {
     display: inline-block;
   }
 
   .nav__links {
     position: absolute;
-    top: 78px;
+    top: 96px;
     right: 1rem;
     width: min(240px, calc(100% - 2rem));
     flex-direction: column;
