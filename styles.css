@@ -381,6 +381,19 @@ p {
   font-size: 1.25rem;
 }
 
+.product-card__price {
+  display: inline-flex;
+  margin: 0 0 0.65rem;
+  padding: 0.26rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--color-primary);
+  background: rgba(210, 113, 103, 0.16);
+  border: 1px solid rgba(106, 31, 43, 0.12);
+}
+
 .product-card p {
   color: var(--color-muted);
 }
@@ -693,13 +706,23 @@ p {
 }
 
 @media (max-width: 760px) {
+  .brand__logo-wrap,
+  .brand__logo {
+    width: 112px;
+    height: 112px;
+  }
+
+  .nav {
+    min-height: 124px;
+  }
+
   .nav__toggle {
     display: inline-block;
   }
 
   .nav__links {
     position: absolute;
-    top: 96px;
+    top: 124px;
     right: 1rem;
     width: min(240px, calc(100% - 2rem));
     flex-direction: column;
