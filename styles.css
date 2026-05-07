@@ -277,60 +277,6 @@ p {
   max-width: 700px;
 }
 
-.prominent {
-  position: relative;
-  margin-top: clamp(1.2rem, 3vw, 2.2rem);
-}
-
-.prominent-card {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 14px 34px rgba(31, 16, 18, 0.28);
-  max-width: 460px;
-}
-
-.prominent-card img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.prominent-card__overlay {
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  color: #fff;
-  padding: 1rem 1rem 1.1rem;
-  background: linear-gradient(to top, rgba(23, 13, 15, 0.84), rgba(23, 13, 15, 0.1));
-}
-
-.prominent-card__label {
-  font-size: 0.74rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 0.2rem;
-}
-
-.prominent-card h3 {
-  color: #fff;
-  font-size: clamp(1.45rem, 2.8vw, 2rem);
-  margin-bottom: 0.15rem;
-}
-
-.prominent-card__price {
-  display: inline-flex;
-  font-size: 0.9rem;
-  font-weight: 700;
-  padding: 0.25rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: rgba(255, 255, 255, 0.14);
-}
-
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -816,10 +762,6 @@ p {
 
   .hero__actions .btn {
     width: 100%;
-  }
-
-  .prominent-card {
-    max-width: 100%;
   }
 
   .products__grid {
