@@ -88,7 +88,7 @@ if (contactForm) {
     const text = `Hi Dakshini!%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
 
     contactNote.textContent = "Thanks! Redirecting you to WhatsApp...";
-    const waBase = (whatsappWidget?.getAttribute("href") || "https://wa.me/919999999999").split("?")[0];
+    const waBase = (whatsappWidget?.getAttribute("href") || "https://wa.me/917892317259").split("?")[0];
     window.open(`${waBase}?text=${text}`, "_blank", "noopener,noreferrer");
     contactForm.reset();
   });
